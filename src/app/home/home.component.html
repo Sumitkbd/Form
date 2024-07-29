@@ -1,0 +1,20 @@
+<div class="form-container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Full Name</mat-label>
+      <input matInput formControlName="fullName" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" type="password" />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+</div>
